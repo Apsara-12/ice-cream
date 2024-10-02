@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to Ice Cream Paradise</h1>
+                <p>"A day without ice cream was a day wasted."</p>
+                <button onclick="exploreAll()">Explore all</button>
+            </div>
+            <div class="hero-image">
+                <div class="product" onclick="showDetails('Vanilla Chocolate', 'Vanilla Chocolate Ice Cream', '$3.99')">
+                <img src="https://www.africa-uganda-business-travel-guide.com/images/chocolate-and-vanilla-ice-cream-recipe-21927144.jpg" alt="Vanilla Chocolate Ice Cream">
+                <h2>Vanilla Chocolate</h2>
+            </div>
+            </div>
+        </section>
+        <section class="products" id="products">
+            <div class="product" onclick="showDetails('Double Chocolate', 'Double Chocolate Ice Cream', '$5.99')">
+                <img src="https://th.bing.com/th/id/OIP.pBNqwHspWylJd2iI8ZNUPQHaJQ?pid=ImgDet&w=474&h=592&rs=1" alt="Double Chocolate Ice Cream">
+                <h2>Double Chocolate</h2>
+            </div>
+            <div class="product" onclick="showDetails('Strawberry', 'Strawberry Ice Cream', '$4.99')">
+                <img src="https://www.thecountrycook.net/wp-content/uploads/2022/05/thumbnail-No-Churn-Strawberry-Ice-Cream.jpg" alt="Strawberry Ice Cream" class="ice-image">
+                <h2>Strawberry</h2>
+            </div>
+        </section>
+        <section class="details" id="details">
+            <h2 id="product-name"></h2>
+            <p id="product-description"></p>
+            <p id="product-price"></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Ice Cream Shop</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
